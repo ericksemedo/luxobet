@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuxoBet Elite</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("8ivmHjJkRc1GzEDYB");
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div id="welcome">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/ezB-Ow6VQlQ?si=hYqGd5D64FqJvdo2" frameborder="0" allowfullscreen></iframe>
+      <input type="email" id="emailInput" placeholder="Digite seu e-mail" />
+      <button onclick="solicitarAcesso()">Solicitar Acesso</button>
+    </div>
+    
+    <div id="tokenSection" style="display:none;">
+      <input type="text" id="tokenInput" placeholder="Insira o token recebido" />
+      <button onclick="verificarToken()">Acessar Ferramenta</button>
+    </div>
+
+    <div id="ferramenta" style="display:none;">
+      <h2>Calculadora de Probabilidade</h2>
+      <div id="grade" class="grade"></div>
+      <p id="sugestao"></p>
+      <iframe src="https://betway.com/pt/live-casino/game/bac-bo" width="100%" height="600"></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
